@@ -1,0 +1,5 @@
+NAME                  READY   STATUS    RESTARTS   AGE
+nginx                 1/1     Running   0          43m
+replica-set-1-46hth   1/1     Running   0          12m
+replica-set-1-pbqwd   1/1     Running   0          17m
+replica-set-1-wwl2s   1/1     Running   0          17m

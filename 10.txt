@@ -1,0 +1,4 @@
+delete pod replica-set-1-46hth
+pod "replica-set-1-46hth" deleted
+
+Defaul deployment startegy is Rolling Update which maintains the number of pods as specified 3

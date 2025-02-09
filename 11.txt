@@ -1,0 +1,5 @@
+controlplane $ kubectl get deployments 
+No resources found in default namespace.
+controlplane $ kubectl get rs
+NAME            DESIRED   CURRENT   READY   AGE
+replica-set-1   3         3         3       24m
