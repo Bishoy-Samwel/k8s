@@ -13,6 +13,6 @@ spec:
         app: busybox
     spec:
       containers:
-        - name: busybox
-          image: busybox
+        - name: nginx
+          image: nginx
           command: ["sleep", "3600"]  # Keeps the container running

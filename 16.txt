@@ -1,0 +1,43 @@
+bishoy@debian:~/k8s$ kubectl describe deployment deployment-1
+Name:                   deployment-1
+Namespace:              default
+CreationTimestamp:      Sun, 09 Feb 2025 16:13:10 +0200
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 2
+Selector:               app=busybox
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=busybox
+  Containers:
+   nginx:
+    Image:      nginx
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      sleep
+      3600
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  <none>
+  Tolerations:     <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  deployment-1-5c684d4858 (0/0 replicas created)
+NewReplicaSet:   deployment-1-8f5d976b6 (3/3 replicas created)
+Events:
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  19m    deployment-controller  Scaled up replica set deployment-1-5c684d4858 from 0 to 3
+  Normal  ScalingReplicaSet  6m41s  deployment-controller  Scaled up replica set deployment-1-8f5d976b6 from 0 to 1
+  Normal  ScalingReplicaSet  6m15s  deployment-controller  Scaled down replica set deployment-1-5c684d4858 from 3 to 2
+  Normal  ScalingReplicaSet  6m15s  deployment-controller  Scaled up replica set deployment-1-8f5d976b6 from 1 to 2
+  Normal  ScalingReplicaSet  5m41s  deployment-controller  Scaled down replica set deployment-1-5c684d4858 from 2 to 1
+  Normal  ScalingReplicaSet  5m41s  deployment-controller  Scaled up replica set deployment-1-8f5d976b6 from 2 to 3
+  Normal  ScalingReplicaSet  5m26s  deployment-controller  Scaled down replica set deployment-1-5c684d4858 from 1 to 0

@@ -1,0 +1,3 @@
+bishoy@debian:~/k8s$ kubectl rollout undo deployment/deployment-1 --to-revision=1
+deployment.apps/deployment-1 rolled back
+

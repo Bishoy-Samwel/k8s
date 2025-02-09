@@ -1,0 +1,8 @@
+bishoy@debian:~/k8s$ kubectl get pods
+NAME                            READY   STATUS              RESTARTS   AGE
+deployment-1-5c684d4858-4l2rm   1/1     Running             0          13m
+deployment-1-5c684d4858-d6x6h   1/1     Running             0          13m
+deployment-1-5c684d4858-g725d   1/1     Terminating         0          13m
+deployment-1-8f5d976b6-q2hn2    0/1     ContainerCreating   0          4s
+deployment-1-8f5d976b6-xnj82    1/1     Running             0          30s
+nginx                           1/1     Running             0          18m
