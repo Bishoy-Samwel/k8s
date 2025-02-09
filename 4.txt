@@ -1,0 +1,2 @@
+NAME    READY   STATUS             RESTARTS   AGE
+nginx   0/1     ImagePullBackOff   0          11m
